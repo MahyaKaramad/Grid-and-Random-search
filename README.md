@@ -1,35 +1,30 @@
-# MNIST Digit Recognition using ANN
+# Model Parameter Tuning Using Grid Search and Random Search
 
-## Project Overview
-This project utilizes an Artificial Neural Network (ANN) to recognize handwritten digits from the MNIST dataset. The goal is to accurately classify images of handwritten digits (0-9) using a simple yet effective neural network model implemented in Python using TensorFlow and Keras.
+This Jupyter notebook is a comprehensive resource for implementing both grid search and random search techniques to optimize model parameters. It is tailored for educational purposes and practitioners aiming to improve model accuracy through effective hyperparameter tuning.
 
-## Features
-- **Data Preprocessing**: Includes normalization and reshaping of the MNIST dataset.
-- **ANN Model**: A multi-layer perceptron model with layers configured for optimal digit recognition.
-- **Training**: Detailed training process with accuracy and loss metrics.
-- **Evaluation**: Assessing model performance on test data.
+## Overview
+
+The notebook demonstrates the setup and execution of both grid search and random search methodologies using Python and Scikit-learn's `GridSearchCV` and `RandomizedSearchCV`. These techniques are vital for identifying the best parameters that enhance model performance.
+
+## Key Features
+
+- **Parameter Setup**: Outlines the hyperparameters to be tuned and specifies the range of values for each.
+- **Model Configuration**: Utilizes a placeholder model, which can be replaced with any Scikit-learn compatible model.
+- **Search Implementations**:
+  - **Grid Search**: Detailed setup of `GridSearchCV` including multiple parameters and how to run the search over all possible combinations.
+  - **Random Search**: Setup of `RandomizedSearchCV` for searching over a random selection of parameters.
+- **Result Analysis**: Techniques for extracting and displaying the best parameters and evaluating model performance.
+
+## Prerequisites
+
+The following packages are required to run this notebook:
+- Python 3.x
+- NumPy
+- Scikit-learn
+- Jupyter (for running the notebook interactively)
 
 ## Installation
-Before running this project, ensure you have Python installed along with the following packages:
-- TensorFlow
-- Keras
-- NumPy
-- Matplotlib (for visualization)
 
-You can install the required packages using pip:
+To install the necessary Python packages, use the command below:
 ```bash
-pip install tensorflow keras numpy matplotlib
-```
-
-## Usage
-To run the project, simply execute the Jupyter Notebook:
-```bash
-jupyter notebook mnist_ANN.ipynb
-```
-Follow the instructions within the notebook to train the model and evaluate its performance.
-
-## Contributing
-Contributions to this project are welcome. Please fork the repository, make your changes, and submit a pull request.
-
-## License
-This project is open-sourced under the MIT License. See the LICENSE file for more information.
+pip install numpy scikit-learn jupyter
